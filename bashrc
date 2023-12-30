@@ -13,7 +13,7 @@ shopt -s histappend
 HISTSIZE=1024
 
 # prompt customization
-PS1='\[$?\]\[\033[01;15m\]\u\[\033[0m\]@\h:\W\$ '
+PS1='[$?]\[\033[01;15m\]\u\[\033[0m\]@\h:\W\$ '
 
 # check the window size after each command and, if necessary, update the values of LINES and COLUMNS.
 shopt -s checkwinsize
