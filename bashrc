@@ -17,7 +17,7 @@ PS1='[$?]\[\033[01;15m\]\u\[\033[0m\]@\h:\W\$ '
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-PATH="~/.local/bin/:${PATH}"
+[ -d ~/.local/bin/ ] || mkdir -p ~/.local/bin/ && PATH="~/.local/bin/:${PATH}"
 
 # aliases. just aliases.
 alias grep='grep --color=auto'
