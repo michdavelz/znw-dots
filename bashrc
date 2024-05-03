@@ -21,6 +21,6 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 
 # aliases. just aliases.
 alias grep='grep --color=auto'
-alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
+[ -d ~/.local/share/ ] || mkdir -p ~/.local/share/ && alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
 alias mpv='mpv --no-audio-display'
 #alias ls='eza --group-directories-first --icons --mounts --octal-permissions --no-permissions --group --smart-group'
