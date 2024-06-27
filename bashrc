@@ -12,7 +12,7 @@ HISTSIZE=-1
 HISTFILESIZE=-1
 
 # prompt customization
-PS1='[$?]\[\033[01;15m\]\u\[\033[0m\]@\h:\W\$ '
+env | grep -Fq 'DISTROBOX' && PS1='[$?]\[\033[01;15m\]\u\[\033[0m\]@\h\[\033[33m\] \[\033[0m\]:\W\$ ' || PS1='[$?]\[\033[01;15m\]\u\[\033[0m\]@\h\[\033[35m\]󰣨 \[\033[0m\]:\W\$ '
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
@@ -23,4 +23,4 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 alias grep='grep --color=auto'
 [[ $XDG_DATA_HOME ]] && alias wget='wget --hsts-file="${XDG_DATA_HOME}/wget-hsts"' || mkdir -p ~/.local/share/ && alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
 alias mpv='mpv --no-audio-display'
-#alias ls='eza --group-directories-first --icons --mounts --octal-permissions --no-permissions --group --smart-group'
+alias ls='eza --group-directories-first --icons --mounts --octal-permissions --no-permissions --group --smart-group'
