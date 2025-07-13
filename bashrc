@@ -15,5 +15,5 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 [ "$(command -v mpv)" ] && alias mpv='mpv --no-audio-display' || :
 [ "$(command -v eza)" ] && alias ls='eza --group-directories-first --icons --mounts --octal-permissions --no-permissions --group --smart-group' || :
 [ "$(command -v bat)" ] && alias cat='bat --plain' || :
-[ "$(command -v dust)" ] && alias du='dust --threads 12 --limit-filesystem --force-colors' || :
+[ "$(command -v dust)" ] && alias du='dust --limit-filesystem --force-colors' || :
 [ "$(command -v duf)" ] && alias df='duf' || :
