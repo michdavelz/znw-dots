@@ -4,7 +4,6 @@
 # and UI, but pywal for accents and such. More to be
 # added to this script down the road
 
-#!/usr/bin/env bash
 WALLPAPER_PATH=$(find "${HOME}"/Pictures/Wallpapers/*|shuf -n 1)
 export WALLPAPER_PATH
 swww img --transition-fps 60 "$WALLPAPER_PATH" || echo "Error setting wallpaper code:$?"
