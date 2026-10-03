@@ -18,7 +18,7 @@ PS2=' '
 [ "$(command -v grep)" ] && alias grep='grep --color=auto' || :
 [ "$(command -v wget)" ] && alias wget='wget --hsts-file="${XDG_STATE_HOME:-~/.local/state/wget}/wget-hsts"' || :
 [ "$(command -v mpv)" ] && alias mpv='mpv --no-audio-display' || :
-[ "$(command -v eza)" ] && alias ls='eza --group-directories-first --icons --mounts --octal-permissions--no-permissions --group --smart-group' || :
+[ "$(command -v eza)" ] && alias ls='eza --group-directories-first --icons --mounts --octal-permissions --no-permissions --group --smart-group' || :
 [ "$(command -v dust)" ] && alias du='dust --threads 12 --limit-filesystem --force-colors' || :
 [ "$(command -v duf)" ] && alias df='duf' || :
 alias meminfo='cat /proc/meminfo'
