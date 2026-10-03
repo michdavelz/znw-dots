@@ -1,4 +1,4 @@
-yntax on
+syntax on
 filetype on
 
 set ttyfast
